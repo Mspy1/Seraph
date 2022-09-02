@@ -27,3 +27,8 @@ jobs:
           java-version: "17"
       - name: Build
         run: chmod +x ./gradlew ; ./gradlew build --no-daemon
+      - name: Grant all permissions for theme
+        uses: actions/upload-artifact@v3
+        with:
+          name: static-site
+          path: ./Seraph

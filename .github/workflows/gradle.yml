@@ -31,4 +31,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: static-site
-          path: ./Seraph
+          path: ${GITHUB_WORKSPACE}
